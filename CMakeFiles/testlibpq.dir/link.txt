@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/testlibpq.dir/testlibpq.c.o  -o testlibpq  libpq/libpq.a -lpthread 
