@@ -111,56 +111,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testlibpq3
+# Target rules for targets named testlibpq3.exe
 
 # Build rule for target.
-testlibpq3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testlibpq3
-.PHONY : testlibpq3
+testlibpq3.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testlibpq3.exe
+.PHONY : testlibpq3.exe
 
 # fast build rule for target.
-testlibpq3/fast:
-	$(MAKE) -f CMakeFiles/testlibpq3.dir/build.make CMakeFiles/testlibpq3.dir/build
-.PHONY : testlibpq3/fast
+testlibpq3.exe/fast:
+	$(MAKE) -f CMakeFiles/testlibpq3.exe.dir/build.make CMakeFiles/testlibpq3.exe.dir/build
+.PHONY : testlibpq3.exe/fast
 
 #=============================================================================
-# Target rules for targets named testlibpq
+# Target rules for targets named testlibpq2.exe
 
 # Build rule for target.
-testlibpq: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testlibpq
-.PHONY : testlibpq
+testlibpq2.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testlibpq2.exe
+.PHONY : testlibpq2.exe
 
 # fast build rule for target.
-testlibpq/fast:
-	$(MAKE) -f CMakeFiles/testlibpq.dir/build.make CMakeFiles/testlibpq.dir/build
-.PHONY : testlibpq/fast
+testlibpq2.exe/fast:
+	$(MAKE) -f CMakeFiles/testlibpq2.exe.dir/build.make CMakeFiles/testlibpq2.exe.dir/build
+.PHONY : testlibpq2.exe/fast
 
 #=============================================================================
-# Target rules for targets named testlibpq2
+# Target rules for targets named testlibpq.exe
 
 # Build rule for target.
-testlibpq2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testlibpq2
-.PHONY : testlibpq2
+testlibpq.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testlibpq.exe
+.PHONY : testlibpq.exe
 
 # fast build rule for target.
-testlibpq2/fast:
-	$(MAKE) -f CMakeFiles/testlibpq2.dir/build.make CMakeFiles/testlibpq2.dir/build
-.PHONY : testlibpq2/fast
+testlibpq.exe/fast:
+	$(MAKE) -f CMakeFiles/testlibpq.exe.dir/build.make CMakeFiles/testlibpq.exe.dir/build
+.PHONY : testlibpq.exe/fast
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named test.exe
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+test.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test.exe
+.PHONY : test.exe
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+test.exe/fast:
+	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/build
+.PHONY : test.exe/fast
 
 #=============================================================================
 # Target rules for targets named pq
@@ -181,7 +181,7 @@ test.o: test.c.o
 
 # target to build an object file
 test.c.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.o
+	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/test.c.o
 .PHONY : test.c.o
 
 test.i: test.c.i
@@ -190,7 +190,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.i
+	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -199,7 +199,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.s
+	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/test.c.s
 .PHONY : test.c.s
 
 testlibpq.o: testlibpq.c.o
@@ -208,7 +208,7 @@ testlibpq.o: testlibpq.c.o
 
 # target to build an object file
 testlibpq.c.o:
-	$(MAKE) -f CMakeFiles/testlibpq.dir/build.make CMakeFiles/testlibpq.dir/testlibpq.c.o
+	$(MAKE) -f CMakeFiles/testlibpq.exe.dir/build.make CMakeFiles/testlibpq.exe.dir/testlibpq.c.o
 .PHONY : testlibpq.c.o
 
 testlibpq.i: testlibpq.c.i
@@ -217,7 +217,7 @@ testlibpq.i: testlibpq.c.i
 
 # target to preprocess a source file
 testlibpq.c.i:
-	$(MAKE) -f CMakeFiles/testlibpq.dir/build.make CMakeFiles/testlibpq.dir/testlibpq.c.i
+	$(MAKE) -f CMakeFiles/testlibpq.exe.dir/build.make CMakeFiles/testlibpq.exe.dir/testlibpq.c.i
 .PHONY : testlibpq.c.i
 
 testlibpq.s: testlibpq.c.s
@@ -226,7 +226,7 @@ testlibpq.s: testlibpq.c.s
 
 # target to generate assembly for a file
 testlibpq.c.s:
-	$(MAKE) -f CMakeFiles/testlibpq.dir/build.make CMakeFiles/testlibpq.dir/testlibpq.c.s
+	$(MAKE) -f CMakeFiles/testlibpq.exe.dir/build.make CMakeFiles/testlibpq.exe.dir/testlibpq.c.s
 .PHONY : testlibpq.c.s
 
 testlibpq2.o: testlibpq2.c.o
@@ -235,7 +235,7 @@ testlibpq2.o: testlibpq2.c.o
 
 # target to build an object file
 testlibpq2.c.o:
-	$(MAKE) -f CMakeFiles/testlibpq2.dir/build.make CMakeFiles/testlibpq2.dir/testlibpq2.c.o
+	$(MAKE) -f CMakeFiles/testlibpq2.exe.dir/build.make CMakeFiles/testlibpq2.exe.dir/testlibpq2.c.o
 .PHONY : testlibpq2.c.o
 
 testlibpq2.i: testlibpq2.c.i
@@ -244,7 +244,7 @@ testlibpq2.i: testlibpq2.c.i
 
 # target to preprocess a source file
 testlibpq2.c.i:
-	$(MAKE) -f CMakeFiles/testlibpq2.dir/build.make CMakeFiles/testlibpq2.dir/testlibpq2.c.i
+	$(MAKE) -f CMakeFiles/testlibpq2.exe.dir/build.make CMakeFiles/testlibpq2.exe.dir/testlibpq2.c.i
 .PHONY : testlibpq2.c.i
 
 testlibpq2.s: testlibpq2.c.s
@@ -253,7 +253,7 @@ testlibpq2.s: testlibpq2.c.s
 
 # target to generate assembly for a file
 testlibpq2.c.s:
-	$(MAKE) -f CMakeFiles/testlibpq2.dir/build.make CMakeFiles/testlibpq2.dir/testlibpq2.c.s
+	$(MAKE) -f CMakeFiles/testlibpq2.exe.dir/build.make CMakeFiles/testlibpq2.exe.dir/testlibpq2.c.s
 .PHONY : testlibpq2.c.s
 
 testlibpq3.o: testlibpq3.c.o
@@ -262,7 +262,7 @@ testlibpq3.o: testlibpq3.c.o
 
 # target to build an object file
 testlibpq3.c.o:
-	$(MAKE) -f CMakeFiles/testlibpq3.dir/build.make CMakeFiles/testlibpq3.dir/testlibpq3.c.o
+	$(MAKE) -f CMakeFiles/testlibpq3.exe.dir/build.make CMakeFiles/testlibpq3.exe.dir/testlibpq3.c.o
 .PHONY : testlibpq3.c.o
 
 testlibpq3.i: testlibpq3.c.i
@@ -271,7 +271,7 @@ testlibpq3.i: testlibpq3.c.i
 
 # target to preprocess a source file
 testlibpq3.c.i:
-	$(MAKE) -f CMakeFiles/testlibpq3.dir/build.make CMakeFiles/testlibpq3.dir/testlibpq3.c.i
+	$(MAKE) -f CMakeFiles/testlibpq3.exe.dir/build.make CMakeFiles/testlibpq3.exe.dir/testlibpq3.c.i
 .PHONY : testlibpq3.c.i
 
 testlibpq3.s: testlibpq3.c.s
@@ -280,7 +280,7 @@ testlibpq3.s: testlibpq3.c.s
 
 # target to generate assembly for a file
 testlibpq3.c.s:
-	$(MAKE) -f CMakeFiles/testlibpq3.dir/build.make CMakeFiles/testlibpq3.dir/testlibpq3.c.s
+	$(MAKE) -f CMakeFiles/testlibpq3.exe.dir/build.make CMakeFiles/testlibpq3.exe.dir/testlibpq3.c.s
 .PHONY : testlibpq3.c.s
 
 # Help Target
@@ -290,11 +290,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... testlibpq3"
-	@echo "... testlibpq"
+	@echo "... testlibpq3.exe"
+	@echo "... testlibpq2.exe"
+	@echo "... testlibpq.exe"
 	@echo "... edit_cache"
-	@echo "... testlibpq2"
-	@echo "... test"
+	@echo "... test.exe"
 	@echo "... pq"
 	@echo "... test.o"
 	@echo "... test.i"
