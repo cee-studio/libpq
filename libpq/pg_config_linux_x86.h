@@ -43,9 +43,6 @@
    Changing BLCKSZ requires an initdb. */
 #define BLCKSZ 8192
 
-/* Saved arguments from configure */
-#define CONFIGURE_ARGS " '--prefix=/opt/PostgreSQL/build' '--without-readline' '--without-zlib' '--prefix=/home/lucasmull/Trabalho/postgres/dump' 'CFLAGS=-m32' 'LDFLAGS=-m32' 'CXXFLAGS=-m32'"
-
 /* Define to the default TCP port number on which the server listens and to
    which clients will try to connect. This can be overridden at run-time, but
    it's convenient if your clients have the right default compiled in.
