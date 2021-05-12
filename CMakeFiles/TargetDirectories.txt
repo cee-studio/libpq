@@ -1,0 +1,9 @@
+/home/lucasmull/Trabalho/libpq/CMakeFiles/rebuild_cache.dir
+/home/lucasmull/Trabalho/libpq/CMakeFiles/testlibpq3.dir
+/home/lucasmull/Trabalho/libpq/CMakeFiles/testlibpq.dir
+/home/lucasmull/Trabalho/libpq/CMakeFiles/edit_cache.dir
+/home/lucasmull/Trabalho/libpq/CMakeFiles/testlibpq2.dir
+/home/lucasmull/Trabalho/libpq/CMakeFiles/test.dir
+/home/lucasmull/Trabalho/libpq/libpq/CMakeFiles/rebuild_cache.dir
+/home/lucasmull/Trabalho/libpq/libpq/CMakeFiles/edit_cache.dir
+/home/lucasmull/Trabalho/libpq/libpq/CMakeFiles/pq.dir

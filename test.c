@@ -8,11 +8,15 @@
 
 int main() 
 {
-  const char *conninfo = \
-      "host = tuffi.db.elephantsql.com "
-      "user = ffiuqzvz "
-      "password = M7AOD_TFnZSg70vROqaITY05gCRNtiw8 "
-      "dbname = ffiuqzvz";
+  fprintf(stderr, "Please execute as ./exec < conn.config\n");
+
+  char conninfo[1024];
+
+  /* Get whole conn.config file contents */
+  char *cat = conninfo;
+  char info[128];
+  while (fgets(info, sizeof(info), stdin))
+    cat += snprintf(cat, sizeof(conninfo) - (cat-conninfo), "%s", info);
   fprintf(stderr, "%s\n", conninfo);
 
   /* Make a connection to the DB */
@@ -25,6 +29,7 @@ int main()
     PQfinish(conn);
     return EXIT_FAILURE;
   }
+  fprintf(stderr, "Succesfully established connection to DB\n");
 
   sleep(100); // check at elephantsql.com if connection is active
 
