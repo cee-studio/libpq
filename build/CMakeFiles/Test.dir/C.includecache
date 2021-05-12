@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libpq/include/libpq-fe.h
+stdio.h
+-
+postgres_ext.h
+../libpq/include/postgres_ext.h
+
+../libpq/include/pg_config_ext.h
+
+../libpq/include/postgres_ext.h
+pg_config_ext.h
+../libpq/include/pg_config_ext.h
+
+/home/lucasmull/Trabalho/libpq/test.c
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+libpq-fe.h
+/home/lucasmull/Trabalho/libpq/libpq-fe.h
+
