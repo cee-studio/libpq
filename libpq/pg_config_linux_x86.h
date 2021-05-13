@@ -747,24 +747,6 @@
 /* Define bytes to use libc memset(). */
 #define MEMSET_LOOP_LIMIT 1024
 
-/* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "pgsql-bugs@lists.postgresql.org"
-
-/* Define to the full name of this package. */
-#define PACKAGE_NAME "PostgreSQL"
-
-/* Define to the full name and version of this package. */
-#define PACKAGE_STRING "PostgreSQL 13.3"
-
-/* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "postgresql"
-
-/* Define to the home page for this package. */
-#define PACKAGE_URL "https://www.postgresql.org/"
-
-/* Define to the version of this package. */
-#define PACKAGE_VERSION "13.3"
-
 /* Define to the name of a signed 128-bit integer type. */
 /* #undef PG_INT128_TYPE */
 
@@ -775,29 +757,11 @@
    (GSSAPI). (--with-krb-srvnam=NAME) */
 #define PG_KRB_SRVNAM "postgres"
 
-/* PostgreSQL major version as a string */
-#define PG_MAJORVERSION "13"
-
-/* PostgreSQL major version number */
-#define PG_MAJORVERSION_NUM 13
-
-/* PostgreSQL minor version number */
-#define PG_MINORVERSION_NUM 3
-
 /* Define to best printf format archetype, usually gnu_printf if available. */
-#define PG_PRINTF_ATTRIBUTE gnu_printf
+#define PG_PRINTF_ATTRIBUTE printf
 
 /* Define to 1 to use <stdbool.h> to define type bool. */
 #define PG_USE_STDBOOL 1
-
-/* PostgreSQL version as a string */
-#define PG_VERSION "13.3"
-
-/* PostgreSQL version as a number */
-#define PG_VERSION_NUM 130003
-
-/* A string containing the version number, platform, and C compiler */
-#define PG_VERSION_STR "PostgreSQL 13.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 32-bit"
 
 /* Define to 1 to allow profiling output to be saved separately for each
    process. */
@@ -839,7 +803,7 @@
 #define STDC_HEADERS 1
 
 /* Define to 1 if strerror_r() returns int. */
-/* #undef STRERROR_R_INT */
+#define STRERROR_R_INT 1
 
 /* Define to 1 to use ARMv8 CRC Extension. */
 /* #undef USE_ARMV8_CRC32C */

@@ -1068,7 +1068,7 @@ lo_hton64(pg_int64 host64)
 	uint32		t;
 
 	/* High order half first, since we're doing MSB-first */
-	t = (uint32) (host64 >> 32);
+	t = (uint32) ((int64_t)host64 >> 32);
 	swap.i32[0] = pg_hton32(t);
 
 	/* Now the low order half */
@@ -1095,7 +1095,7 @@ lo_ntoh64(pg_int64 net64)
 	swap.i64 = net64;
 
 	result = (uint32) pg_ntoh32(swap.i32[0]);
-	result <<= 32;
+	result = (int64_t)result << 32;
 	result |= (uint32) pg_ntoh32(swap.i32[1]);
 
 	return result;
